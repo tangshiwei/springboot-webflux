@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  jpa:
+    ##指定数据库类型
+    database: mysql
+    ##是否显示执行sql语句
+    show-sql: true
+    hibernate:
+      naming:
+        ###字段映射策略
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  datasource:
+    url: jdbc:mysql://a.ricepon.com:53373/ricepon
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: asdftreqe
